@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python3 /var/jenkins_home/src/main.py'
+                sh 'python3 ./src/main.py'
             }
         }
     }
