@@ -1,0 +1,13 @@
+pipeline {
+    agent {
+        label 'assignment-agent'
+    }
+    
+    stages {
+        stage('Build') {
+            steps {
+                sh 'python3 /var/jenkins_home/src/main.py'
+            }
+        }
+    }
+}
